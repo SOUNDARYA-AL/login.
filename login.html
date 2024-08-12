@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>login</title>
+        <style>
+            body {
+                background-image: url('blue.jpg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            form {
+                border:4px solid white;
+                backdrop-filter: blur(100px);
+                height:700px;
+                width:700px;
+                text-align: center;
+                color:white;
+                font-size: xx-large;
+            }
+            </style>
+            <script> 
+                function login(){ 
+                    var a=document.getElementById("username").value
+                    var b=document.getElementById("demo") 
+                    b.innerHTML=a;
+                   b.style.backgroundColor="blue" 
+                   return false
+                    } 
+            </script>  
+    </head>
+    <body>
+        <form action="#">
+            <h1>LOGIN</h1>
+            <br><br><br><br>
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="enter your name" size="30px" required><br><br><br><br>
+        <label for="password">password:</label>
+        <input type="text" password="password"placeholder="enter your password" size="30px" required>
+        <br><br><br><br>
+        <input type="submit"value="click"onclick=" return login()"> 
+       <p id="demo"></p> 
+       <h1 id="username" onmouseover=" login()"> </h1>
+    </form>  
+    </body>
+</html>
